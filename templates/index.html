@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body style="background-image: url('./image/background.jpg');">
+
+  <div class="randome_button">
+    <button type="submit">Randome Vocab</button>
+  </div>
+  <div class="randome_button_1">
+    <button type="submit">Learn 20 newest words</button>
+  </div>
+  <div class="randome_button_2">
+    <button type="submit">Learn 10 newest and 10 oldest words</button>
+  </div>
+  <!-- <button id="add-row">Thêm dòng</button>
+  <button id="save">Lưu</button> -->
+
+  <div class="slideshow-container">
+    <!-- <audio class="sound-icon-vocab" controls>
+      <source src="./sound/sound1.mp3" type="audio/mp3">
+    </audio>
+    <audio class="sound-icon-example" controls>
+      <source src="./sound/sound1.mp3" type="audio/mp3">
+    </audio> -->
+
+
+    
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <br>
+
+  <div class="slide" style="text-align:center">
+    <!-- <span class="dot" onclick="currentSlide(1)"></span> -->
+    <!-- The dots will also be generated dynamically -->
+  </div>
+  <!-- <button id="startButton">Start Voice Input</button>
+    <div id="output">Hôm nay bạn khỏe kghgoong</div> -->
+    <i class="fa-solid fa-microphone"></i>
+  <form id="myForm", class = "wrapper">
+    <div class="line-wrapper">
+      <p>Vocab</p>
+      <input name="vocab" type="text" />
+    </div>
+    <div class="line-wrapper">
+      <p>Mean</p>
+      <input name="mean" type="text" />
+    </div>
+    <div class="line-wrapper">
+      <p>Example</p>
+      <input name="example" type="text" />
+    </div>
+    <div class="btn-wrapper">
+      <button type="submit">save</button>
+    </div>
+    <!-- <label for="csv-file-input">Load File CSV:</label> -->
+    <div class="load_file">
+      <input type="file" id="csv-file-input" accept=".csv" onchange="handleFileUpload(event)"/>
+    </div>
+  </form>
+    
+  
+
+  
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
