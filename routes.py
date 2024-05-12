@@ -94,7 +94,7 @@ def generate_vocab(randome):
         random.shuffle(half_part2)
         
         data_result = half_part2[-10: ] + half_part1[:10 ]
-        
+        random.shuffle(data_result)
 
 
     return make_response(data_result), 200
