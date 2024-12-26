@@ -18,7 +18,7 @@ def preprocess_text(text: str) -> str:
     text = text.lower()
     return text
 
-synthesiser = pipeline("text-to-speech", "microsoft/speecht5_tts", device=0)
+synthesiser = pipeline("text-to-speech", "microsoft/speecht5_tts", device='cpu')
 # embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
 speaker_embedding = torch.tensor(embedding_speech).unsqueeze(0)
 def make_response(data={}, status=200):
